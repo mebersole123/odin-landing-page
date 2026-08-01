@@ -39,9 +39,15 @@ a {
     padding: 0 200px;
 }
 
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .container.hero {
     background-color: #1F2937;
-    /* height: 200px; */
     display: flex;
     color:#F9FAF8;
     justify-content: space-between;
@@ -91,9 +97,36 @@ button {
     justify-content: center;
 }
 
-.main {
-    flex: 1;
-    display: flex;
+.information {
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    padding: 72px 200px 100px;
+    gap: 32px;
+}
+
+.information h1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin: 0;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+
+.info {
+    text-align: center;
+    width: 164px;
+    flex: 1 1 0;
+}
+
+.info .image {
+    height: 164px;
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+    margin-bottom: 8px;
 }
